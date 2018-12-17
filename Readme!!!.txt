@@ -64,7 +64,7 @@ COMMAND LINE OPTIONS:
 -epool 	Ethereum pool address. Only Stratum protocol is supported for pools. Miner supports all pools that are compatible with Dwarfpool proxy and accept Ethereum wallet address directly.
 	For solo mining, specify "http://" before address, note that this mode is not intended for proxy or HTTP pools, also "-allpools 1" will be set automatically in this mode.
 	Note: The miner supports all Stratum versions for Ethereum, HTTP mode is necessary for solo mining only. 
-	Using any proxies will reduce effective hashrate by at least 1%, so connect miner to Stratum pools directly. Using HTTP pools will reduce effective hashrate by at least 5%.
+	Using any proxies will reduce effective hashrate by at least 1%, so connect miner to Stratum pools directly. Using HTTP pools will reduce effective hashrate by at least 5%. 
 	Miner also supports SSL/TLS encryption for all data between miner and pool (if pool supports encryption over stratum), it significantly improves security.
 	To enable encryption, use "ssl://" or "stratum+ssl://" prefix (or "tls" instead of "ssl"), for example: "-epool ssl://eu1.ethermine.org:5555"
 
@@ -315,7 +315,7 @@ Dual mining:
 	EthDcrMiner64.exe -epool eth-eu.dwarfpool.com:8008 -ewal 0xD69af2A796A737A103F12d2f0BCC563a13900E6F/YourWorkerName -epsw x -dpool stratum+tcp://lbry.suprnova.cc:6256 -dwal Redhex.my -dpsw x -dcoin lbc
 	Read dwarfpool FAQ for additional options, for example, you can setup email notifications if you specify your email as password.
 
- nanopool Ethereum+Siacoin:
+Â nanopool Ethereum+Siacoin:
 EthDcrMiner64.exe -epool eu1.nanopool.org:9999 -ewal YOUR_ETH_WALLET/YOUR_WORKER/YOUR_EMAIL -epsw x -dpool "http://sia-eu1.nanopool.org:9980/miner/header?address=YOUR_SIA_WALLET&worker=YOUR_WORKER_NAME&email=YOUR_EMAIL" -dcoin sia
 
  nanopool Ethereum+Siacoin(Stratum):
@@ -418,9 +418,9 @@ KNOWN ISSUES
 - AMD cards: in Linux with gpu-pro drivers, the list of GPUs may differ from the list of temperatures. You can use -di to change order of GPUs to match both lists.
 - nVidia cards: dual mode is not so effective as for AMD cards.
 - Windows 10 Defender recognizes miner as a virus, some antiviruses do the same. Miner is not a virus, add it to Defender exceptions. 
-  I write miners since 2014. Most of them are recognized as viruses by some paranoid antiviruses, perhaps because I pack my miners to protect them from disassembling, perhaps because some people include them into their botnets, or perhaps these antiviruses are not good, I don't know. For these years, a lot of people used my miners and nobody confirmed that my miner stole anything or did something bad. 
-  Note that I can guarantee clean binaries only for official links in my posts on this forum (bitcointalk). If you downloaded miner from some other link - it really can be a virus.
-  However, my miners are closed-source so I cannot prove that they are not viruses. If you think that I write viruses instead of good miners - do not use this miner, or at least use it on systems without any valuable data.
+ Â I write miners since 2014. Most of them are recognized as viruses by some paranoid antiviruses, perhaps because I pack my miners to protect them from disassembling, perhaps because some people include them into their botnets, or perhaps these antiviruses are not good, I don't know. For these years, a lot of people used my miners and nobody confirmed that my miner stole anything or did something bad. 
+ Â Note that I can guarantee clean binaries only for official links in my posts on this forum (bitcointalk). If you downloaded miner from some other link - it really can be a virus.
+ Â However, my miners are closed-source so I cannot prove that they are not viruses. If you think that I write viruses instead of good miners - do not use this miner, or at least use it on systems without any valuable data.
 
 
 
@@ -509,7 +509,7 @@ This miner does not use HTTP protocol, it uses Stratum directly. So you should c
   It's a problem of RDC, use TeamViewer or some other remote access software. Or try to use latest version of the miner.
 
 - I see only one card instead of two in temperature management info.
-  Disable CrossFire, don't use Remote Desktop Connection. Or try to use latest version of the miner.
+ Â Disable CrossFire, don't use Remote Desktop Connection. Or try to use latest version of the miner.
 
 - Miner works in ETH-only mode but crashes in dual mode.
   Dual mode requires more power, so make sure PSU power is enough and check GPU clocks if you OC'ed them.
